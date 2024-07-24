@@ -7,9 +7,11 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/recommend")
+@app.route("/recommend", methods=["GET"])
 def recommend():
+    """Render the recommendation page."""
     return render_template("recommend.html")
+
 
 
 
