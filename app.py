@@ -8,7 +8,7 @@ def home():
     return render_template("home.html")
 
 @app.route("/recommend")
-def reccomend():
+def recommend():
     return render_template("recommend.html")
 
 
