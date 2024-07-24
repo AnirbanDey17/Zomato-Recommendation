@@ -7,8 +7,9 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-
-
+@app.route("/reccomend")
+def reccomend():
+    return render_template("reccomend.html")
 
 
 
